@@ -6,6 +6,9 @@ $(document).ready(function() {
 			data.forEach(function(r) {
 				$("#main").append("<div><h1>" + r.name + "</h1><p>" + r.body + "</p></div>");
 			});
+			if (data.length == 0) {
+			    $("#main").html("<h1>Nothing Found</h1>");
+			}
 		});
 	});
 });
