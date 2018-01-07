@@ -11,13 +11,19 @@
 <body>
 <div class="container">
     <h1 class="text-center">Recipe Database</h1>
-    <form method="POST" enctype="application/x-www-form-urlencoded">
+    <form method="POST" enctype="application/x-www-form-urlencoded" id="form">
         <div class="form-group">
             <label for="search">Search: </label>
             <input type="text" name="search" class="form-control" id="search" />
         </div>
-        <input type="submit" class="btn btn-primary" />
+        <input type="submit" class="btn btn-primary" value="search" />
     </form>
+    <div id="main" />
 </div>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+<script src="../static/main.js" th:src="@{/main.js}" />
 </body>
 </html>
